@@ -1,0 +1,26 @@
+{% load profile_complete_notification %}
+
+<div class="navbar navbar-expand-lg bg-light navbar-light">
+    <div class="container-fluid">
+        <a href="{% url 'index' %}" class="navbar-brand">VanillaArt</a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+            <div class="navbar-nav ml-auto">
+                {% profile_complete_notification %}
+
+                <a href="{% url 'create' %}" class="nav-item nav-link">Upload Art</a>
+                {% if request.user.is_authenticated %}
+                    <p>Hello, <a href="{% url 'view profile details' %}" class="nav-item nav-link">{{ request.user }}</a></p>
+                    <a href="{% url 'log out user' %}" class="nav-item nav-link">Sign out</a>
+                {% else %}
+                    <a href="{% url 'log in user' %}" class="nav-item nav-link">Sign in</a>
+                    <a href="{% url 'register user' %}" class="nav-item nav-link">Sign up</a>
+                {% endif %}
+            </div>
+
+        </div>
+    </div>
+</div>

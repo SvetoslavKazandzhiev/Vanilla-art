@@ -1,0 +1,64 @@
+{% extends 'common/base.html' %}
+{% load static %}
+{% block content %}
+    <div class="tm-main-content">
+        {% for a in about %}
+            <div class="row mb-5">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center mb-md-0 mb-4"><img src="{{ a.image.url }}"
+                                                                                                 alt="Image"
+                                                                                                 class="img-fluid">
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 pl-md-4 tm-flex-center">
+                    <div class="tm-about-text tm-flexbox-ie-fix">
+                        <h2 class="tm-orange-text mb-4">{{ a.name }}</h2>
+                        <p class="mb-4">{{ a.description }}</p>
+                    </div>
+                </div>
+            </div> <!-- row -->
+        {% endfor %}
+        <div class="row mb-4">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 mb-4">
+                <div class="tm-bg-orange1 p-5">
+                    <i class="fa fa-4x fa-audio-description d-block mb-4 text-center"></i>
+                    <h3 class="mb-4">Create account</h3>
+                    <p>Don't have an account with us yet? Create an account with your name and email.</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 mb-4">
+                <div class="tm-bg-orange2 p-5">
+                    <i class="fa fa-4x fa-bell-o d-block mb-4 text-center"></i>
+                    <h3 class="mb-4">Get discount</h3>
+                    <p>Apply for your voucher and enter WELCOME at the checkout. 10% off your first order.</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 mb-4">
+                <div class="tm-bg-orange3 p-5">
+                    <i class="fa fa-4x fa-birthday-cake d-block mb-4 text-center"></i>
+                    <h3 class="mb-4">Follow Us</h3>
+                    <p>Follow us in social network and grab a prize.Every week a lot of amazing prizes.</p>
+                </div>
+            </div>
+        </div> <!-- row -->
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="tm-box-pad tm-bordered-box">
+                    <h2 class="tm-section-title tm-orange-text">Did you know?</h2>
+                    <p>Jewellery or jewelry comes from an old French word joule which is derived from a Latin word
+                        jocale which means playing.
+                        The word gold comes from an Old English word geolu which means yellow.
+                        The largest gold nugget was found in Australia weighing 200 pounds.
+                        The concept of the engagement ring was started by Maximilian of Austria back in 1477.</p>
+                    <p>The biggest supplier of diamonds in South America.
+                        The biggest consumer of diamonds is The United States of America.
+                        The largest consumer of gold in India.
+                        Pure gold is yellow in colour. Rose Gold jewellery is made by mixing copper with pure gold.
+                        3/4th American brides’ engagement ring is made from gold and diamond.
+                        The largest diamond found to date is The Cullinan weighing 1.3pounds.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+{% endblock %}

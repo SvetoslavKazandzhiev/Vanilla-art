@@ -1,0 +1,14 @@
+{% extends 'common/base.html' %}
+{% block content %}
+    <div class="kochan">
+    {% if user.is_authenticated %}
+    <form method="post">
+        {% csrf_token %}
+        <p>Are you sure you want to delete your account?</p>
+        <input type="submit" value="Confirm">
+    </form>
+    {% else %}
+        <p><a href="#">Login</a></p>
+    {% endif %}
+    </div>
+{% endblock content %}

@@ -1,0 +1,12 @@
+{% extends 'common/base.html' %}
+
+{% block content %}
+    <div class="form">
+        <h1>{{ request.user }}</h1>
+        <form method="POST" action="{% url 'log in user' %}">
+            {% csrf_token %}
+            {{ form }}
+            <input type="submit" value="Sign in"/>
+        </form>
+    </div>
+{% endblock %}

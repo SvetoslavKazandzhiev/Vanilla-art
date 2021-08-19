@@ -1,0 +1,16 @@
+{% extends 'common/base.html' %}
+{% block content %}
+    <div class="note-container">
+        {% for art in arts %}
+            <h2>{{ art.name }}</h2> <img src="{{ art.image }}">
+
+            <div class="right">
+                <a class="button details" href="{% url 'details note' %}">Details</a>
+                <a class="button edit" href="{% url 'edit note' note.id %}">Edit</a>
+                <a class="button delete" href="{% url 'delete note' note.id %}">Delete</a>
+            </div>
+        {% endfor %}
+
+    </div>
+
+{% endblock %}
