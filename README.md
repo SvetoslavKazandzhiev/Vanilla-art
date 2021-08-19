@@ -16,5 +16,4 @@ comes with a customizable profile that lets you update personal information and 
 recent pictures you've uploaded. Anyone who browses your profile will immediately see these works. Users also have full CRUD on their uploads.
 
 
-![Backgound_1](https://user-images.githubusercontent.com/80912240/130134198-81dba0d4-1811-4277-9d13-40d15d328dd0.jpg)
 
