@@ -5,7 +5,7 @@ to stuff that will gross you out. its a good hit at what you can find there too,
 
 It's a community website for creative people. It is a place where you can post your art
  (no matter what form it takes) to share and get feedback on, a place where artists, even amateur-level artists, can post their works publicly and let others
- to leave comments, reviews, or hit the favorite button on their artworks. DeviantArt is great primarily for
+ to leave comments, reviews, or hit the favorite button on their artworks. VanillaArt is great primarily for
  beginner and aspiring artists because it lets you showcase your work, mingle with others who are artists by 
 themselves (even artists of specific interest(s), e.g. fans of a certain celebrity/movie/series who draw fan-arts),
  and receive constructive feedbacks.
