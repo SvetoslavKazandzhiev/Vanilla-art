@@ -1,6 +1,6 @@
 from django.shortcuts import render
 
-from artportal.about.models import About
+from artportal.artportal.about.models import About
 
 
 def about_view(request):
