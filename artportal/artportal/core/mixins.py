@@ -1,3 +1,4 @@
+# using bootstrap mixin
 class BootStrapFormViewMixin:
     def get_form(self, **kwargs):
         form = super().get_form(**kwargs)
